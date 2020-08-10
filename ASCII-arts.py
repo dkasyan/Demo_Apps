@@ -11,7 +11,7 @@ for a in range(1, 5):
   for i in range(1, 3):
     print(("**") * a )
 
-print(" ")
+print("  ")
 
 c= 7
 for i in range(1, c):
