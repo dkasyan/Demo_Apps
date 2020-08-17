@@ -11,7 +11,10 @@ for name in name_list:
 
 print(name_dictionary)
 
-
-
-
 #### Zadanie drugie ###
+leng = name_dictionary.values()
+number_list = {1, 2, 3, 5, 6, 11, 12, 18, 19, 21}
+print(number_list)
+new_number_list = number_list.intersection(leng)
+print(new_number_list)
+
