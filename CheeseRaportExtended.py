@@ -26,7 +26,7 @@ name_leaf_mint = ("listek miętowy")
 price_leaf_mint = 20
 weight_leaf_mint = 0.2
 
-text = "Produkt {}, masa w kg {}, cena {}"
+text = "Produkt {}, masa w kg {}, cena {:.2f} zł"
 
 Cost =  price_roquefort + price_stilton + price_brie + price_gouda + price_edam + price_parmezan + price_mozzarella + price_czechoslovak_sheep_cheese
 
