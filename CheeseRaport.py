@@ -14,20 +14,26 @@ name_mozzarella = "mozzarella"
 price_mozzarella = 14
 name_czechoslovak_sheep_cheese = "czechosłowacki ser z owczego mleka"
 price_czechoslovak_sheep_cheese = 122.32
-text = "Kupiłem {} w cenie {} zł"
+text = "Kupiłem {} w cenie {:.2f} zł"
 
 print("####################### SHOP LIST #######################")
 #print( "Kupiłem %s w cenie %d zł" % (name_roquefort, price_roquefort))
-print( f"Kupiłem {name_roquefort} w cenie {price_roquefort:.2f} zł")
-print( f"Kupiłem {name_stilton} w cenie {price_stilton:.2f} zł")
-print( f"Kupiłem {name_brie} w cenie {price_brie:.2f} zł")
+#print( f"Kupiłem {name_roquefort} w cenie {price_roquefort:.2f} zł")
+print( text.format(name_roquefort, price_roquefort))
+#print( f"Kupiłem {name_stilton} w cenie {price_stilton:.2f} zł")
+print(text.format(name_stilton, price_stilton))
+#print( f"Kupiłem {name_brie} w cenie {price_brie:.2f} zł")
+print( text.format(name_brie, price_brie))
 #print( "Kupiłem %s w cenie %s zł" % (name_gouda, price_gouda))
-print( f"Kupiłem {name_gouda} w cenie {price_gouda:.2f} zł")
+#print( f"Kupiłem {name_gouda} w cenie {price_gouda:.2f} zł")
+print( text.format(name_gouda, price_gouda))
 #print( text.format(name_edam, price_edam))
-print( f"Kupiłem {name_edam} w cenie {price_edam:.2f} zł")
-#print( text.format(name_parmezan, price_parmezan))
-print( f"Kupiłem {name_parmezan} w cenie {price_parmezan:.2f} zł")
+#print( f"Kupiłem {name_edam} w cenie {price_edam:.2f} zł")
+print(text.format(name_edam, price_edam))
+print( text.format(name_parmezan, price_parmezan))
+#print( f"Kupiłem {name_parmezan} w cenie {price_parmezan:.2f} zł")
 #print( "Kupiłem %s w cenie %s zł" % (name_mozzarella, price_mozzarella))
-print( f"Kupiłem {name_mozzarella} w cenie {price_mozzarella:.2f} zł" )
-print( text.format(name_czechoslovak_sheep_cheese, price_czechoslovak_sheep_cheese:.2f))
+#print( f"Kupiłem {name_mozzarella} w cenie {price_mozzarella:.2f} zł" )
+print( text.format(name_mozzarella, price_mozzarella))
+print( text.format(name_czechoslovak_sheep_cheese, price_czechoslovak_sheep_cheese))
 #print( f"Kupiłem {name_czechoslovak_sheep_cheese} w cenie {price_czechoslovak_sheep_cheese:.2f} zł")
