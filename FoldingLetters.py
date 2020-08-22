@@ -10,3 +10,27 @@ for i in list:
         new_list.append(i)
 
 print(new_list)
+
+#Dana jest lista: [2, 0, 0, 0, 1, 0, 0, 0, 0, 0, 2, 3, 0, 0]. Zadeklaruj ją w Pythonie, a następnie użyj slicingu, by otrzymać listę, która zawiera tylko zera z tej kolekcji. Potem użyj tej samej techniki do zwrócenia listy, która zawiera wszystkie inne liczby tylko nie zera z tej kolekcji.
+slice_list = [2, 0, 0, 0, 1, 0, 0, 0, 0, 0, 2, 3, 0, 0]
+
+new_slice_zero = []
+new_slice_number = []
+
+#print(slice_list[1:4])
+#print(slice_list[5:10])
+#print(slice_list[-2:])
+
+new_slice_zero.append(slice_list[1:4])
+new_slice_zero.append(slice_list[5:10])
+new_slice_zero.append(slice_list[-2:])
+
+print(new_slice_zero)
+
+new_slice_number.append(slice_list[0])
+new_slice_number.append(slice_list[4])
+new_slice_number.append(slice_list[10: 12])
+
+
+#new_slice_number.append(slice_list.remove())
+print(new_slice_number)
