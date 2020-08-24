@@ -4,17 +4,26 @@ name_dictionary = dict()
 
 for name in name_list:
     lenght = (len(name))
- #   name_dictionary[name] = lenght
-    name_dictionary.update({name : lenght})
+    name_dictionary[name] = lenght
+ #   name_dictionary.update({name : lenght})
 
 print(name_dictionary)
 
 #### Zadanie drugie ###
 leng = name_dictionary.values()
 number_list = {1, 2, 3, 5, 6, 11, 12, 18, 19, 21}
-print(number_list)
-new_number_list = number_list.intersection(leng)
-print(new_number_list)
+prime_list = []
+#print(range(1,13))
+division_dict = {}
+for number in number_list:
+    for i in range(1, number):
+        print(i)
+
+#    print(number)
+#    for i in range(2,number - 1):
+#    if number % i == 0:
+#            print(number)
+    
 
 #### Zadanie trzecie ###
 
