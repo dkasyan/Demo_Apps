@@ -13,11 +13,17 @@ print(name_dictionary)
 leng = name_dictionary.values()
 number_list = {1, 2, 3, 5, 6, 11, 12, 18, 19, 21}
 prime_list = []
-#print(range(1,13))
-division_dict = {}
+count_list = []
+
 for number in number_list:
     for i in range(1, number):
-        print(i)
+        if number % i == 0:
+            count_list.append(number)
+    if count_list.count(number) == 1:
+        prime_list.append(number)
+prime_list.append(1)
+prime_list.sort()
+print(prime_list)
 
 #    print(number)
 #    for i in range(2,number - 1):
@@ -27,10 +33,10 @@ for number in number_list:
 
 #### Zadanie trzecie ###
 
-weak_days = {'pon','śro','pią','sob'}
-print(f"przed zmianami zbiór to {weak_days}")
-weak_days.update({"wto", "czwa", "nied"})
-print(f"po zmianach zbior to {weak_days}")
+week_days = {'pon','śro','pią','sob'}
+print(f"przed zmianami zbiór to {week_days}")
+week_days.update({"wto", "czwa", "nied"})
+print(f"po zmianach zbior to {week_days}")
 
 #### Zadanie czwarte ###
 
