@@ -33,10 +33,14 @@ print(prime_list)
 
 #### Zadanie trzecie ###
 
-week_days = {'pon','śro','pią','sob'}
-print(f"przed zmianami zbiór to {week_days}")
-week_days.update({"wto", "czwa", "nied"})
-print(f"po zmianach zbior to {week_days}")
+week_days = ['pon','śro','pią','sob']
+miss_days = ['wto', 'czw', 'nie']
+days = miss_days + week_days
+
+#week_days.sort()
+#print(f"przed zmianami zbiór to {week_days}")
+
+print(f"po zmianach zbior to {days}")
 
 #### Zadanie czwarte ###
 
