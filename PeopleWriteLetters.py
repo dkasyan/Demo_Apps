@@ -35,12 +35,26 @@ print(prime_list)
 
 week_days = ['pon','śro','pią','sob']
 miss_days = ['wto', 'czw', 'nie']
-days = miss_days + week_days
 
+week_days = {'pon':1,'śro':3,'pią':5,'sob':6}
+miss_days = {'wto':2, 'czw':4, 'nie':7}
+a = sorted(week_days.items(), key=lambda x: x[1])    
+print(a)
+#days = miss_days + week_days
+#day_1, day_3, day_5, day_6, day_2, day_4, day_7 = days
+#print(day_1)
+#string_day = []
+#for day in range(1, 8):
+
+#    string_day.append(f"day_{day}")
+
+#for good_day in string_day:
+#    print(good_day)
+#print(string_day)
 #week_days.sort()
 #print(f"przed zmianami zbiór to {week_days}")
 
-print(f"po zmianach zbior to {days}")
+#print(f"po zmianach zbior to {days}")
 
 #### Zadanie czwarte ###
 
