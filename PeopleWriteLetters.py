@@ -38,8 +38,9 @@ miss_days = ['wto', 'czw', 'nie']
 
 week_days = {'pon':1,'śro':3,'pią':5,'sob':6}
 miss_days = {'wto':2, 'czw':4, 'nie':7}
-a = sorted(week_days.items(), key=lambda x: x[1])    
-print(a)
+week_days.update(miss_days)
+a = sorted(week_days.items(), key=lambda x: x[1]) #Wyjaśnić to na supporcie   
+print((a[1:1])[:4])
 #days = miss_days + week_days
 #day_1, day_3, day_5, day_6, day_2, day_4, day_7 = days
 #print(day_1)

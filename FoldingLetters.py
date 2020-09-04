@@ -17,19 +17,15 @@ slice_list = [2, 0, 0, 0, 1, 0, 0, 0, 0, 0, 2, 3, 0, 0]
 new_slice_zero = []
 new_slice_number = []
 
-#print(slice_list[1:4])
-#print(slice_list[5:10])
-#print(slice_list[-2:])
+new_slice_zero = slice_list[1:4] + slice_list[5:10] + slice_list[-2:]
 
-new_slice_zero.append(slice_list[1:4])
-new_slice_zero.append(slice_list[5:10])
-new_slice_zero.append(slice_list[-2:])
+#new_slice_zero.append(slice_list[1:4])
+#new_slice_zero.append(slice_list[5:10])
+#new_slice_zero.append(slice_list[-2:])
 
 print(new_slice_zero)
+new_slice_number = slice_list[0:0]
 
-new_slice_number.append(slice_list[0])
-new_slice_number.append(slice_list[4])
-new_slice_number.append(slice_list[10: 12])
 
 
 #new_slice_number.append(slice_list.remove())
