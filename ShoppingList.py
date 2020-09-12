@@ -1,9 +1,8 @@
+a = 1
 
+def scope_demo():
+    a = 2
+    print(a)
 
-
-print("Lista zakupów")
-while i is True:
-    
-#Idę do Piekarnia, kupuję tu następujące rzeczy: ['Chleb', 'Pączek', 'Bułki'].
-#Idę do Warzywniak, kupuję tu następujące rzeczy: ['Marchew', 'Seler', 'Rukola'].
-#W sumie kupuję 6 produktów.
+scope_demo()
+print(a)
