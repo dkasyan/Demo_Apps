@@ -5,7 +5,7 @@ def ending():
     exit()
 
 k = True
-while k == True: 
+while k == True:
     a = input(": ")
     if a == "left" or a == "right":
         k = False
@@ -15,12 +15,12 @@ while k == True:
 if a == "right":
     print("Game Over")
     exit()
-    
 
+k = True   
 while k == True:
     print("Widzisz fose co robisz? ")
     b = input("Chose swim or wait: ")
-    if a == "swim" or a == "wait":
+    if b == "swim" or b == "wait":
         k == False
     else:
         print("Powtórz")
