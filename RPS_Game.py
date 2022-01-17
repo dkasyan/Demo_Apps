@@ -1,11 +1,11 @@
 import random
 
-plays = 3
-choices = ["rock", "paper", "scissors"]
+plays = 12 #Number of plays
+choices = ["r", "p", "s"]
 computer_plays = []
 player_plays = []
 zero = 0
-r = '''
+rock = '''
     _______
 ---'   ____)
       (_____)
@@ -14,7 +14,7 @@ r = '''
 ---.__(___)
 '''
 
-p = '''
+paper = '''
     _______
 ---'   ____)____
           ______)
@@ -23,7 +23,7 @@ p = '''
 ---.__________)
 '''
 
-s = '''
+scissors = '''
     _______
 ---'   ____)____
           ______)
@@ -43,23 +43,37 @@ def check_selection(a):
             a = input("Ups podaj wlasciwa opcje r/p/s: ")
     return(a)
 
-computer_plays.append(random.choice(choices))
+def compare_choice(player,computer):
+    if player == computer:
+        print(f"{player} vs {computer}\n remis")
+    elif( player == "r" and computer =="s"):
+        print(f"{rock} vs {scissors}\n Wygrał kamien gracza")
+    elif( player == "p" and computer =="r"):
+        print(f"{paper} vs {rock}\nWygrały papier gracza")
+    elif( player == "s" and computer =="p"):
+        print(f"{scissors} vs {paper}\nWygrały norzyce gracza")
+    elif( player == "r" and computer =="p"):
+        print(f"\nWygrał kamien komputera")
+    elif( player == "p" and computer =="s"):
+        print(f"\nWygrały papier komputera")
+    elif( player == "s" and computer =="r"):
+        print(f"\nWygrały norzyce komputera")
+
+
+
 
 
 while zero != plays:
-    zmienna = input("Podaj")
-    twoj_wyb = check_selection(zmienna)
-    player_plays.append(twoj_wyb)
-    computer_plays.append(random.choice(choices))
+    player_choice = check_selection(input("Podaj r/p/s:"))
+    player_plays.append(player_choice)
+    computer_choice = random.choice(choices)
+    computer_plays.append(computer_choice)
+    compare_choice(player_choice,computer_choice)
     zero = zero + 1
 
-zero = 0
-while zero != plays:
-    if player_plays[zero] == computer_plays[zero]:
-        print ("remis")
-    else:
-        print("wygrana")
-    zero = zero + 1
+print(player_plays)
+print(computer_plays)
+
 
 
 
