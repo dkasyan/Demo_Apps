@@ -12,7 +12,12 @@ import random
 # #    2) Stwórz liste trzech opcji
 # #    3) Wylosuj za pomoca losowania z listy pierwsza opcje i dodaj ja do listy 
 # # Do ilu gramy ?
-rock = '''
+plays = 3
+choices = ["rock", "paper", "scissors"]
+computer_plays = []
+player_plays = []
+zero = 0
+r = '''
     _______
 ---'   ____)
       (_____)
@@ -21,7 +26,7 @@ rock = '''
 ---.__(___)
 '''
 
-paper = '''
+p = '''
     _______
 ---'   ____)____
           ______)
@@ -30,7 +35,7 @@ paper = '''
 ---.__________)
 '''
 
-scissors = '''
+s = '''
     _______
 ---'   ____)____
           ______)
@@ -50,10 +55,24 @@ def check_selection(a):
             a = input("Ups podaj wlasciwa opcje r/p/s: ")
     return(a)
 
+computer_plays.append(random.choice(choices))
 
-zmienna = input("Podaj")
 
-twoj_wyb = check_selection(zmienna)
-print(twoj_wyb)
+while zero != plays:
+    zmienna = input("Podaj")
+    twoj_wyb = check_selection(zmienna)
+    player_plays.append(twoj_wyb)
+    computer_plays.append(random.choice(choices))
+    zero = zero + 1
+
+zero = 0
+while zero != plays:
+    if player_plays[zero] == computer_plays[zero]:
+        print ("remis")
+    else:
+        print("wygrana")
+    zero = zero + 1
+
+
 
 
