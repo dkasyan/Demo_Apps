@@ -1,17 +1,5 @@
 import random
 
-
-# #1) stwórz pętle 3
-
-# #    2) Stwórz liste trzech opcji
-# #    3) Wylosuj za pomoca losowania z listy pierwsza opcje i dodaj ja do listy 
-# # Do ilu gramy ?
-
-#1) stwórz pętle 3
-
-# #    2) Stwórz liste trzech opcji
-# #    3) Wylosuj za pomoca losowania z listy pierwsza opcje i dodaj ja do listy 
-# # Do ilu gramy ?
 plays = 3
 choices = ["rock", "paper", "scissors"]
 computer_plays = []
