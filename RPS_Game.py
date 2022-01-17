@@ -42,16 +42,13 @@ scissors = '''
 
 def check_selection(a):
     i = True
-    while i == False :
-        if a == "r" or "p" or "s":
+    while i != False :
+        if a =="r" or a =="p" or a =="s":
+            print(f'Wybrałeś {a}')
             i = False
-            print("udalo sie")
-        else:
-            i = True
-            a = input("Ups podaj wlasciwa opcje r/p/s")
-
+        else:     
+            a = input("Ups podaj wlasciwa opcje r/p/s: ")
     return(a)
-            
 
 
 zmienna = input("Podaj")
