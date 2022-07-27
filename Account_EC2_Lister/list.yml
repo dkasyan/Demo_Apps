@@ -1,0 +1,14 @@
+---
+- name: "Create aws account"
+  hosts: localhost
+  vars: 
+    default_region: eu-central-1
+  tasks:
+      - name: Read Accounts
+        read_csv:
+          path: "Accounts.csv"
+          delimiter: ';'
+        register: accounts
+      
+      - include_tasks: ista.yml
+        loop: "{{ accounts.list | selectattr('Active', 'equalto', 'yes') | selectattr('AWS Account Number', 'match', '\\d') | map(attribute='AWS Account Number') | map('trim') | list }}"
