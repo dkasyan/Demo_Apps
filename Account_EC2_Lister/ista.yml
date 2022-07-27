@@ -1,18 +1,24 @@
 ---
-- sts_assume_role:
-    role_arn: "arn:aws:iam::{{ item }}:role/admin"
-    role_session_name: "ec2_list"
-    region: "{{ default_region }}"
-    #mfa_serial_number: "arn:aws:iam::573699462807:mfa/E675986ADM"
-    mfa_serial_number: "arn:aws:iam::573699462807:mfa/damian.kasyan.extern@ergo.com"
-    mfa_token: 082987
-    aws_access_key: AKIAYLEZHC2LUZMVK7NQ
-    aws_secret_key: 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
-  register: assumed_role
+- name: "Accountswich"
+  hosts: localhost
+  vars: 
+    default_region: eu-central-1
 
-- shell: aws s3 ls
-  environment:
-      AWS_ACCESS_KEY_ID: "{{ assumed_role.sts_creds.access_key }}"
-      AWS_SECRET_ACCESS_KEY: "{{ assumed_role.sts_creds.secret_key }}"
-      AWS_SESSION_TOKEN: "{{ assumed_role.sts_creds.session_token }}"
-      AWS_DEFAULT_REGION: "{{ default_region }}"
+  tasks:  
+    - sts_assume_role:
+        role_arn: "arn:aws:iam::562476416241:role/admin"
+        role_session_name: "ec2_list"
+        region: "eu-central-1"
+        mfa_serial_number: "arn:aws:iam::573699462807:mfa/damian.kasyan.extern@ergo.com"
+        mfa_token: 802374 
+      register: assumed_role
+
+    - shell: aws s3 ls
+      environment:
+          AWS_ACCESS_KEY_ID: "{{ assumed_role.sts_creds.access_key }}"
+          AWS_SECRET_ACCESS_KEY: "{{ assumed_role.sts_creds.secret_key }}"
+          AWS_SESSION_TOKEN: "{{ assumed_role.sts_creds.session_token }}"
+          AWS_DEFAULT_REGION: "{{ default_region }}"
+
+    - debug:
+        msg: "{{ out }}"
