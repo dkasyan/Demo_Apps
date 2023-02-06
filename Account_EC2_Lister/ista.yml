@@ -6,11 +6,11 @@
 
   tasks:  
     - sts_assume_role:
-        role_arn: "arn:aws:iam::562476416241:role/admin"
+        role_arn: "arn:aws:iam:::role/admin"
         role_session_name: "ec2_list"
         region: "eu-central-1"
-        mfa_serial_number: "arn:aws:iam::573699462807:mfa/damian.kasyan.extern@ergo.com"
-        mfa_token: 802374 
+        mfa_serial_number: "arn:aws:iam:::mfa/damian"
+        mfa_token:  
       register: assumed_role
 
     - shell: aws s3 ls
