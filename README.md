@@ -6,7 +6,7 @@ Ten repozytorium zawiera moje notatki z różnych dziedzin.
 
 ## Struktura katalogów
 
-- [Dziedzina 1](./dziedzina1): Opis notatek z dziedziny 1.
+- [Dziedzina 1](./AWS): Opis notatek z dziedziny 1.
 - [Dziedzina 2](./dziedzina2): Opis notatek z dziedziny 2.
 - [Dziedzina 3](./dziedzina3): Opis notatek z dziedziny 3.
 - [Inne](./inne): Inne notatki.
