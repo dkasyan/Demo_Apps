@@ -8,3 +8,7 @@ secret.yml
 .DS_Store
 *.pdf
 *.DS_Store
+IronPdf.Slim/
+file.txt
+.DS_Store
+*.DS_Store
