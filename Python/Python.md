@@ -1,10 +1,16 @@
-# Dziedzina 1
+# Setup
+
+## VENV
+Isolate your Python development projects from your system installed 
+Setup virtual environmen:
+'''python3 -m venv path-to-catalog'''
+'''python3 -m venv C:\Kodilla\course_python\env'''
+
+
+
+## Python Structure
 
 - [Join String](./Python_Templates/1_joined_string.py): Opis notatek z dziedziny 1.
-
-## Temat 1
-
-[Tutaj wpisz notatki lub opis dotyczący tematu 1]
 
 ## Temat 2
 
