@@ -6,7 +6,11 @@ Setup virtual environmen:
 ```python3 -m venv path-to-catalog```  
 ```python3 -m venv C:\Kodilla\course_python\env```
 
-
+Activate enviroment  
+``` $ source ./env/bin/activate ```  
+Also use  
+```pip freeze```
+```pip freeze > requirements.txt```
 
 ## Python Structure
 
