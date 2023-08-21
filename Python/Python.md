@@ -3,8 +3,8 @@
 ## VENV
 Isolate your Python development projects from your system installed 
 Setup virtual environmen:
-'''python3 -m venv path-to-catalog'''
-'''python3 -m venv C:\Kodilla\course_python\env'''
+```python3 -m venv path-to-catalog```
+```python3 -m venv C:\Kodilla\course_python\env```
 
 
 
