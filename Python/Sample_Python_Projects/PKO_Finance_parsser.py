@@ -38,7 +38,6 @@ def print_csv():
         print(text_without_word)
 
 
-# cccccbeeggttfitlbelicjubcehktevllrtdvlbhfebl
 
 
 def extract_table_content(pdf_path, table_name):
@@ -76,19 +75,6 @@ def extract_table_content(pdf_path, table_name):
 #    print(page_text)
 
 if __name__ == '__main__':
-#    print('PyCharm')
-#    print_csv()
-    # print_pdf()
     pdf_path = "Wyciąg 31.07.2023.pdf"
     table_name = "Wyszczególnienie transakcji"
-    # table_content = extract_table_content(pdf_path, table_name)
-
-    # if table_content:
-    #     print(table_content)
-    # else:
-    #     print(f"Table '{table_name}' not found in the PDF.")
-
     table_data = extract_table_content(pdf_path, table_name)
-
-    # for row in table_data:
-        # print(f"Data waluty: {row.data_waluty}, Kwota: {row.kwota}, Opis operacji: {row.opis_operacji}")
