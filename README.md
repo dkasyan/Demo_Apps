@@ -10,6 +10,7 @@ Ten repozytorium zawiera moje notatki z różnych dziedzin.
 - [Python](./Python/Python.md): Opis notatek z dziedziny 2.
 - [Ansible](./Ansible/Ansible.md): Opis notatek z dziedziny 3.
 - [Terraform](./inne): Inne notatki.
+- [Git](./Git/Git.md): Git basic commands
 
 ## Wkład
 
