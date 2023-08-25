@@ -7,5 +7,5 @@ Set your email address: ```git config --global user.email "MY_NAME@example.com"`
 
 ## Branch manipulate
 
-Add branch: ``` git checkout -b ＜new-branch＞```
+Add branch: ``` git checkout -b ＜new-branch＞```  
 Delete branch: ``` git checkout -d ＜new-branch＞ ```
