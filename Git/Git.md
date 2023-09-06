@@ -9,3 +9,10 @@ Set your email address: ```git config --global user.email "MY_NAME@example.com"`
 
 Add branch: ``` git checkout -b ＜new-branch＞```  
 Delete branch: ``` git checkout -d ＜new-branch＞ ```
+
+## Remote branch manipulate
+
+Show remote branch: ``` git branch -r ```   
+Download branches: ``` git fetch ```
+Remote repository name, which by default is origin: ``` git fetch origin ```  
+
