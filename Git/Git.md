@@ -15,4 +15,5 @@ Delete branch: ``` git checkout -d ＜new-branch＞ ```
 Show remote branch: ``` git branch -r ```   
 Download branches: ``` git fetch ```  
 Remote repository name, which by default is origin: ``` git fetch origin ```  
+Download pull all: ``` git pull --all ```
 
