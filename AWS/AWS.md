@@ -2,11 +2,11 @@
 
 [Opis dziedziny 1]
 
-## Temat 1
+## IAM
 
 [Tutaj wpisz notatki lub opis dotyczący tematu 1]
 
-## Temat 2
+## VPC
 
 [Tutaj wpisz notatki lub opis dotyczący tematu 2]
 
