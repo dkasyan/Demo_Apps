@@ -11,6 +11,8 @@ Ten repozytorium zawiera moje notatki z różnych dziedzin.
 - [Ansible](./Ansible/Ansible.md): Opis notatek z dziedziny 3.
 - [Terraform](./inne): Inne notatki.
 - [Git](./Git/Git.md): Git basic commands
+- [Node](./Node/Node.md): Node menaging stuff
+- [Vault](.Vault.md): Vault from hasicorp
 
 ## Wkład
 
@@ -28,4 +30,4 @@ Jeśli chciałbyś/chciałabyś dodać swoje notatki lub poprawić istniejące, 
 
 ## Kontakt
 
-[Tutaj wpisz swoje dane kontaktowe, jeśli chcesz, aby ktoś mógł się z Tobą skontaktować w sprawie notatek]
+damian.kasyan@primei.it
