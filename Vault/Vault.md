@@ -18,6 +18,7 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
 
 Vault need two local vaules like `export VAULT_ADD="http://serwer.com:80"` and `export VAULT_TOKEN="hvs.dfhni3fsjnbfdk"`  
 If we want need check serwer status or parms we must use `vault status` then we shoud get info like:
+  
 ```Key                    Value
 ---                    -----
 Seal Type              shamir
@@ -37,3 +38,13 @@ Active Node Address    https://192.168.1.5:8300
 ```
 
 ## How download list of secrets
+
+`vault kv list wireguard`
+
+## How read data
+
+`vault kv get wireguard/g100`
+
+## Add secrets 
+
+`vault kv put -mount=wireguard h101 priv="iLqDovVKnNoOZfcTzbB/YLAoX8PKYK4I61odUyUxSVc=" pub="Gm+6u/sLG1i6xFaRKuGPcDD9NbeqyzLbC2BILKjzBio="`
