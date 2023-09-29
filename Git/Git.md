@@ -17,3 +17,13 @@ Download branches: ``` git fetch ```
 Remote repository name, which by default is origin: ``` git fetch origin ```  
 Download pull all: ``` git pull --all ```
 
+## Git tag
+
+Show tags: ``` git tag  ```  
+List tags: ``` git tag -l ```  
+Show details: ``` git show v1.4 ```  
+Add new tags: ``` git tag -a v1.4 -m "my version 1.4" ```  
+Push specyfic tag: ``` git push origin v1.5 ```  
+Push all tags: ``` git push origin --tags ```  
+
+
