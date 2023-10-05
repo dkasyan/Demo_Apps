@@ -15,7 +15,14 @@ Also use
 ## Python Structure
 
 - [Join String](./Python_Templates/1_joined_string.py): Opis notatek z dziedziny 1.
-## Temat 2
+## Loops
+### FOR and IN  
+```list = [1, 2, 3, 4]```  
+```sum = 0```  
+```for num in squares:   ```   
+&nbsp; &nbsp;``` sum += num```  
+```print sum``` 
+
 
 [Tutaj wpisz notatki lub opis dotyczący tematu 2]
 

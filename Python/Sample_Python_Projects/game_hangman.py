@@ -1,18 +1,18 @@
 import random
 
 random_words = ["noga", "car", "epileptyka"]
+empty_list = []
 special_word = random.choice(random_words)
-choice = "b"
-for letter in special_word:
-    if letter == choice:
+
+guess = input("Guess a letter: ").lower()
+
+for i in special_word:
+    empty_list.append("_")
+    if guess == i:
         print("OK")
+    else:
+        print("Wrong")
+print(empty_list)
 
-
-
-def covered_fields(special_word):
-
-    print(len(special_word))
-
-covered_fields(special_word)
 #print(f"Is this what you just said? {choice}")
 
