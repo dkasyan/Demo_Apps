@@ -15,6 +15,9 @@ Also use
 ## Python Structure
 
 - [Join String](./Python_Templates/1_joined_string.py): Opis notatek z dziedziny 1.
+- [Link text](https://website-name.com)
+- [Link text](https://website-name.com)
+- Topic: [Loops](https://newyork.craigslist.org/d/missed-connections/search/mis 'The best place on the internet').
 ## Loops
 ### FOR and IN  
 ```list = [1, 2, 3, 4]```  
@@ -23,12 +26,20 @@ Also use
 &nbsp; &nbsp;``` sum += num```  
 ```print sum``` 
 
-
 [Tutaj wpisz notatki lub opis dotyczący tematu 2]
 
-### Podtemat 2.1
+### 4 Working with boolean types
+Outp should be output
 
-[Tutaj wpisz notatki lub opis dotyczący podtematu 2.1]
+``` 
+user@2 Python_Templates % python3 4_working_with_boolean_types.py  
+True  
+True  
+True  
+False  
+False   
+```
+
 
 ### Podtemat 2.2
 
