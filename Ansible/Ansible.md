@@ -25,8 +25,9 @@ my-app/
 ├─ requirements.txt  
 ├─ inventories/  
 ├─ roles/  
-│  ├─ name_role/  
-│  ├─ example_role/  
+   ├─ name_role/
+   ├─ name_role/  
+   ├─ example_role/  
 │  ├─ install_nginx/  
 │  ├─ favicon.ico  
 │  ├─ remove  
