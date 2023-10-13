@@ -1,0 +1,5 @@
+[all]
+snork1
+snork2
+snork3
+kontroler

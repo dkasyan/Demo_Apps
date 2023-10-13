@@ -27,3 +27,6 @@ Push specyfic tag: ``` git push origin v1.5 ```
 Push all tags: ``` git push origin --tags ```  
 
 
+# More git 
+[.git more](https://blog.meain.io/2023/what-is-in-dot-git/?utm_source=unknownews)
+[git rebase](https://www.freecodecamp.org/news/git-rebase-handbook/?utm_source=unknownews)

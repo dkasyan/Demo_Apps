@@ -3,21 +3,27 @@ import random
 random_words = ["noga", "car", "epileptyka"]
 empty_list = []
 special_word = random.choice(random_words)
+number = 0
+len_special_word = len(special_word)
 
+for i in special_word:
+    empty_list.append("_")
 
-
-for word in range(len(special_word)):
-    print(len(special_word))
+while number <= len_special_word:
     guess = input("Guess a letter: ").lower()
-    for i in special_word:
-        if guess == i:
-            empty_list.append(i)
-        else:
-            empty_list.append("_")
+    for z in empty_list:
+        if guess == special_word[number]:
+            empty_list[number] = guess
+    print(empty_list)
+    number = (number + 1)
+    print(number)
     print(empty_list)
 
 
 
+
+
+https://www.youtube.com/watch?v=Kul_54wk2kw@
 
 
 
