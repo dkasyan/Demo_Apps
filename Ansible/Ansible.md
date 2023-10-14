@@ -66,9 +66,13 @@ roles/
     fooapp/               # ""
 ```
 
-## Temat 2
+## Inventory file
 
-[Tutaj wpisz notatki lub opis dotyczący tematu 2]
+```ansible_host=192.0.2.50``` - this is host where we   
+```ansible_connection=ssh``` or ```ansible_connection=winrm``` - this is type conncetion, for linux and windows       
+```ansible_port=80```  
+```ansible_user=user```   
+```ansible_password=PASWORD``` or ```ansible_ssh_private_key_file=./key/file```   
 
 ### Podtemat 2.1
 
