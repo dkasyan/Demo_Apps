@@ -5,8 +5,18 @@
     page_title: My Landing Page
     page_description: This is my landing page description.
   tasks:
-    - name: Install Nginx
+    - name: Update yum
       yum:
         name: '*'
         state: latest
 
+- hosts: nginx
+  become: yes
+  vars:
+    page_title: My Landing Page
+    page_description: This is my landing page description.
+  tasks:
+    - name: Install Ngnx
+      yum:
+        name: nginx
+        state: latest

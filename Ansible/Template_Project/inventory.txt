@@ -8,3 +8,7 @@ kontroler ansible_host=172.16.1.111 ansible_connection=ssh ansible_port=22 ansib
 snork1
 snork2
 snork3
+
+[nginx]
+snork2
+snork3
