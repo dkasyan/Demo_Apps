@@ -14,6 +14,7 @@ Also use
 ```pip freeze > requirements.txt```
 
 ## Ad-hoc
+```ansible all -i inventory.txt -m command -a "df -h"```
 
 # Structure 
 
