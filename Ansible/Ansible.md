@@ -75,6 +75,19 @@ roles/
 ```ansible_user=user```   
 ```ansible_password=PASWORD``` or ```ansible_ssh_private_key_file=./key/file```   
 
+## Inventory groups
+
+```
+Pattern	Result Target
+all	All Hosts from your inventory file
+host1	A single host (host1)
+host1:host2	Both host1 and host2
+group1	A single group (group1)
+group1:group2	All servers in group1 and group2
+group1:\&group2	Only servers that are both in group1 and group2
+group1:\!group2	Servers in group1 except those also in group2
+```
+
 ### Podtemat 2.1
 
 [Tutaj wpisz notatki lub opis dotyczący podtematu 2.1]
