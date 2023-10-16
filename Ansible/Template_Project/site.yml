@@ -4,14 +4,4 @@
   vars:
     page_title: My Landing Page
     page_description: This is my landing page description.
-  tasks:
-    - name: Install Nginx
-      yum:
-        name: nginx
-        state: latest
-
-    - name: Allow all access to tcp port 80
-      ufw:
-        rule: allow
-        port: '80'
-        proto: tcp   
+  roles:
