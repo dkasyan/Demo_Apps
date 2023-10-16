@@ -6,5 +6,5 @@
 - name: Allow all access to tcp port 80
   ufw:
     rule: allow
-    port: '80'
-    proto: tcp   
+    port: '{ port_number }'
+    proto: tcp 
