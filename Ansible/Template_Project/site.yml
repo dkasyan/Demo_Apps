@@ -5,3 +5,6 @@
     page_title: My Landing Page
     page_description: This is my landing page description.
   roles:
+      - update
+      - basicpackages
+
