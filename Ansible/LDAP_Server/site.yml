@@ -3,16 +3,7 @@
   become: true
   vars:
     server_hostname: ldapaasseco
-    page_description: This is my landing page description.
+    vault_secret: nowehaslo
   roles:
-      - update
+   #   - update
       - ldap_setup
-
-- hosts: doc
-  become: true
-  vars:
-    server_hostname: ldapaasseco
-    page_description: This is my landing page description.
-  roles:
-      - update
-      - docker_setup

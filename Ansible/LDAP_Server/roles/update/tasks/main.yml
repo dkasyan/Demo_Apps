@@ -7,12 +7,24 @@
     name: '*'
     state: latest
 
+- name: Update yum
+  dnf:
+    name: vim
+    state: latest
+
 - name: Skonfiguruj repozytorium CRB
   ini_file:
     path: /etc/yum.repos.d/crb.repo  # Ścieżka do pliku repozytorium CRB
     section: crb
     option: enabled
     value: 1
+
+- name: Skonfiguruj repozytorium CRB
+  ini_file:
+    path: /etc/yum.repos.d/crb.repo  # Ścieżka do pliku repozytorium CRB
+    section: crb
+    option: gpgcheck
+    value: 0
 
 - name: Zainstaluj epel-release
   dnf:

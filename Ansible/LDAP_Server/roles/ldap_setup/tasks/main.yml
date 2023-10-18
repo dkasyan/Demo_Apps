@@ -1,30 +1,38 @@
-- name: Zainstaluj epel-next-release
+- name: Sprawdz czy openldap-servers present
   dnf:
     name: openldap-servers
     state: present  # Upewnij się, że pakiet jest zainstalowany
+    allowerasing: true
+    allow_downgrade: true
 
-- name: Zainstaluj openldap-servers z parametrem --nobest używając DNF
-  dnf:
-    name: openldap-servers
-    state: present
-    install_args: nobest
-  notify: Uruchom usługę slapd
-
-- name: Zainstaluj openldap-clients
+- name: Sprawdz czy openldap-clients present
   dnf:
     name: openldap-clients
     state: present  # Upewnij się, że pakiet jest zainstalowany
-
-- name: Zainstaluj openldap-clients z parametrem --nobest używając DNF
-  dnf:
-    name: openldap-clients
-    state: present
-    install_args: nobest
-  notify: Uruchom usługę slapd
-
+    allowerasing: true
+    allow_downgrade: true
 
 - name: Uruchom usługę slapd
   systemd:
     name: slapd
     state: started
+
+- name: Install pip
+  dnf:
+    name: python3-pip
+    state: present  # Upewnij się, że pakiet jest zainstalowany
+
+- name: Generate slappasswd password
+  command: "slappasswd -s {{ vault_secret }}"
+  register: slappasswd_output
+  changed_when: false  # Nie oznaczaj jako zmienione, nawet jeśli polecenie jest wykonywane za każdym razem
+
+- name: Display encrypted password
+  debug:
+    var: slappasswd_output.stdout_lines[0]
+
+- name: Prepare chrootpw.ldif file
+  template:
+    src: templates/chrootpw.ldif.j2
+    dest: /tmp/chrootpw.ldif
 
