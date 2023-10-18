@@ -1,0 +1,10 @@
+- name: Install Nginx
+  yum:
+    name: nginx
+    state: latest
+
+- name: Allow all access to tcp port 80
+  ufw:
+    rule: allow
+    port: '{ port_number }'
+    proto: tcp 

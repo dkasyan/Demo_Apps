@@ -1,0 +1,30 @@
+- name: Zainstaluj epel-next-release
+  dnf:
+    name: openldap-servers
+    state: present  # Upewnij się, że pakiet jest zainstalowany
+
+- name: Zainstaluj openldap-servers z parametrem --nobest używając DNF
+  dnf:
+    name: openldap-servers
+    state: present
+    install_args: nobest
+  notify: Uruchom usługę slapd
+
+- name: Zainstaluj openldap-clients
+  dnf:
+    name: openldap-clients
+    state: present  # Upewnij się, że pakiet jest zainstalowany
+
+- name: Zainstaluj openldap-clients z parametrem --nobest używając DNF
+  dnf:
+    name: openldap-clients
+    state: present
+    install_args: nobest
+  notify: Uruchom usługę slapd
+
+
+- name: Uruchom usługę slapd
+  systemd:
+    name: slapd
+    state: started
+
