@@ -19,7 +19,7 @@ olcRootDN: cn=Manager,dc="{{ example_dc }}",dc="{{ com_dc }}"
 dn: olcDatabase={2}mdb,cn=config
 changetype: modify
 add: olcRootPW
-olcRootPW: {SSHA}xxxxxxxxxxxxxxxxxxxxxxxx
+olcRootPW: "{{ slappasswd_output.stdout_lines[0] }}"
 
 dn: olcDatabase={2}mdb,cn=config
 changetype: modify
