@@ -1,0 +1,20 @@
+# replace to your own domain name for [dc=***,dc=***] section
+dn: dc="{{ example_dc }}",dc="{{ com_dc }}"
+objectClass: top
+objectClass: dcObject
+objectclass: organization
+o: Server World
+dc: srv
+
+dn: cn=Manager,dc="{{ example_dc }}",dc="{{ com_dc }}"
+objectClass: organizationalRole
+cn: Manager
+description: Directory Manager
+
+dn: ou=People,dc="{{ example_dc }}",dc="{{ com_dc }}"
+objectClass: organizationalUnit
+ou: People
+
+dn: ou=Group,dc="{{ example_dc }}",dc="{{ com_dc }}"
+objectClass: organizationalUnit
+ou: Group
