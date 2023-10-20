@@ -13,7 +13,7 @@ Ten repozytorium zawiera moje notatki z różnych dziedzin.
 - [Git](./Git/Git.md): Git basic commands
 - [Node](./Node/Node.md): Node menaging stuff
 - [Vault](./Vault/Vault.md): Vault from hasicorp
-- [LDAP](./Ldap/ldap.md): LDAP
+- [LDAP](./LDAP/ldap.md): LDAP
 
 ## Wkład
 
