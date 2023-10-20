@@ -1,5 +1,5 @@
-# specify the password generated above for [olcRootPW] section
+# specify the password generated above for [olcRootPW] section in {{ ansible_facts['hostname'] }}
  dn: olcDatabase={0}config,cn=config
 changetype: modify
 add: olcRootPW
-olcRootPW: {SSHA}xxxxxxxxxxxxxxxxxxxxxxxx
+olcRootPW: "{{ slappasswd_output.stdout_lines[0] }}"
