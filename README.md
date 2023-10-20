@@ -12,7 +12,8 @@ Ten repozytorium zawiera moje notatki z różnych dziedzin.
 - [Terraform](./inne): Inne notatki.
 - [Git](./Git/Git.md): Git basic commands
 - [Node](./Node/Node.md): Node menaging stuff
-- [Vault](.Vault.md): Vault from hasicorp
+- [Vault](./Vault/Vault.md): Vault from hasicorp
+- [LDAP](./Ldap/ldap.md): LDAP
 
 ## Wkład
 

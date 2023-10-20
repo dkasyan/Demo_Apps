@@ -36,3 +36,25 @@
     src: templates/chrootpw.ldif.j2
     dest: /tmp/chrootpw.ldif
 
+- name: Prepare chdomain.ldif.ldif file
+  template:
+    src: templates/chdomain.ldif.j2
+    dest: /tmp/chdomain.ldif
+
+- name: Prepare basedomain.ldif file
+  template:
+    src: templates/basedomain.ldif.j2
+    dest: /tmp/basedomain.ldif
+
+- name: Prepare mod_ssl.ldif file
+  template:
+    src: templates/mod_ssl.ldif.j2
+    dest: /tmp/mod_ssl.ldif
+
+- name: Get rid of an old entry
+  ldap_entry:
+    dn: ou=stuff,dc=example,dc=com
+    state: absent
+    server_uri: ldap://localhost/
+    bind_dn: cn=admin,dc=example,dc=com
+    bind_pw: '{{ vault_secret }}'
