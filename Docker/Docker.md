@@ -28,3 +28,5 @@ Unit tests
 #Analyzing images
 dive - tool to analize docker leyers container
 #Building images
+
+# Data folder data volume
