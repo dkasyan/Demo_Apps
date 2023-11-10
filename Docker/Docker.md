@@ -1,14 +1,8 @@
-# Setup
+# Commands 
 
+```docker ps```
 
-- Koncepcja 
-- Edycja Inventory i wyjaśnienie zmiennych
-- Używanie modułów ad-hoc Przykład użycia
-- Instalacja oprogramowania
-- Opis formatu konfiguracji YAML
-- Struktura plików
-- Weryfikacja poprawności pliku YAML
-
+Instalacja 
 
 # Checking Dockerfiles
 hadolint - tool to flag errors, bugs, stylistic errors, best practice   
@@ -30,3 +24,8 @@ dive - tool to analize docker leyers container
 #Building images
 
 # Data folder data volume
+
+# Clear space
+
+```du -sh /var/lib/docker```   
+```docker system prune --all --force --volumes ```
