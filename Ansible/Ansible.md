@@ -16,11 +16,21 @@ Also use
 ## Ad-hoc
 ```ansible all -i inventory.txt -m command -a "df -h"```
 
+## Ansible logs
+By default, the option is disabled. Can be enabled in the file  ```/etc/ansible/ansible.cfg``` uncommenting ```log_path = /var/log/ansible```
+
 # Structure 
 
-Best pratice is in [Master_repo](https://docs.ansible.com/ansible/2.8/user_guide/playbooks_best_practices.html)
+# Best pratice
 
-[Tutaj wpisz notatki lub opis dotyczący tematu 1]
+Best pratice is in [Official Doc](https://docs.ansible.com/ansible/2.8/user_guide/playbooks_best_practices.html)
+- Different inventory files for different people.
+- On  ```No Log``` not to keep secrets in the log
+- Group hosts based on location, server type, hardware etc etc
+- Encryption of inventory or passwords themselves.
+  
+
+# Structure 
 
 ```
 production                # inventory file for production servers
@@ -87,15 +97,44 @@ group1:group2	All servers in group1 and group2
 group1:\&group2	Only servers that are both in group1 and group2
 group1:\!group2	Servers in group1 except those also in group2
 ```
+# Ansible logic
 
-### Podtemat 2.1
+## Dictionary
 
-[Tutaj wpisz notatki lub opis dotyczący podtematu 2.1]
+## 
 
-### Podtemat 2.2
+# Ansible acceleration
 
-[Tutaj wpisz notatki lub opis dotyczący podtematu 2.2]
+## TAGS
+    
 
-## Temat 3
+## Pipelining
 
-[Tutaj wpisz notatki lub opis dotyczący tematu 3]oo
+Improves performance. Depends on server power. Increases Does not work with all distributions.
+
+Remove # from ```/etc/ansible/ansible.cfg```  in the ```ANSIBLE_PIPELINING = FALSE ``` varialbe.
+
+### Strategy
+It allows you to perform tasks without waiting for responses from all machines.
+
+Adding to the role ``strategy: free``
+
+### Catching facts
+
+Adding to the role ```gether_fact: no```
+
+Before running the playbook, the machine does not collect facts. Saving time.
+
+### ASYNC
+
+Ansible działa w sposób synchroniczny domyślnie. W praktyce kazde zadanie blokuje poprzednie, doputy nie zostanie wykonane. 
+
+Worning: Np wygaśnięcie sesii ssh. 
+
+Musimy zdefiniowac dwie wartosci
+async -  mówi ile ansible ma czekac na zadanie. Wyrazane jest w sekundach
+pool - jak często ansible ma sprawdzic czy zadanie zostalo wykonane. Jesli damy ``0``  ansible uruchomi zadania i przejdzie dalej. 
+
+### Mitogen 
+
+This is a plugin that improves the performance of Ansible. This is not an official Ansible solution.
