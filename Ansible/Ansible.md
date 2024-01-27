@@ -99,11 +99,34 @@ group1:\!group2	Servers in group1 except those also in group2
 ```
 # Ansible logic
 
+<<<<<<< HEAD
 ## Dictionary
 
 ## 
 
 # Ansible acceleration
+=======
+### Jinja Template
+
+We use like: 
+```
+vars:
+    zmienna: zmiennawpliku
+tasks:
+    - name: Jinja Template
+      template:
+        src: plik.txt.j2
+        dest: /usr/plik.txt
+```
+
+in j2 file we shoud have
+```
+This is random file with {{ zmiennawpliku }} for this instance
+```
+
+
+### Handlers
+>>>>>>> 0c67835 (Update)
 
 ## TAGS
     

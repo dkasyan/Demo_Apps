@@ -9,7 +9,7 @@ Ten repozytorium zawiera moje notatki z różnych dziedzin.
 - [AWS](./AWS/AWS.md): Opis notatek z dziedziny 1.
 - [Python](./Python/Python.md): Opis notatek z dziedziny 2.
 - [Ansible](./Ansible/Ansible.md): Opis notatek z dziedziny 3.
-- [Terraform](./inne): Inne notatki.
+- [Terraform](./Terraform): Inne notatki.
 - [Git](./Git/Git.md): Git basic commands
 - [Node](./Node/Node.md): Node menaging stuff
 - [Vault](./Vault/Vault.md): Vault from hasicorp
