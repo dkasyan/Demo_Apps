@@ -1,0 +1,10 @@
+apiVersion: v1  
+kind: Pod 
+metadata:
+  name: moj-pod-cm
+spec:
+  containers:
+  - name: pierwszy-kontener-cm
+    image: nginx
+    command: ["sleep", "20"]
+  restartPolicy: Never 
