@@ -21,13 +21,5 @@ while number <= len_special_word:
 
 
 
-
-
-https://www.youtube.com/watch?v=Kul_54wk2kw@
-
-
-
-
-
 #print(f"Is this what you just said? {choice}")
 
