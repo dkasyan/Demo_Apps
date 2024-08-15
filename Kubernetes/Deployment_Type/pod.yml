@@ -1,0 +1,18 @@
+apiVersion: apps/v1 
+kind: Deployment 
+metadata: 
+  name: apache-deployment 
+spec: 
+  replicas: 3 
+  selector: 
+    matchLabels: 
+      app: app-apache-deployment 
+  template: 
+    metadata: 
+      name: apache-pod-deployment 
+      labels: 
+        app: app-apache-deployment 
+    spec: 
+      containers: 
+      - name: apache-deployment-container 
+        image: httpd
